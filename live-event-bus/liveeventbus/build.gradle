@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
@@ -21,6 +21,6 @@ android {
 }
 
 dependencies {
-    implementation "android.arch.lifecycle:extensions:2.2.0"
-    implementation "android.arch.lifecycle:livedata:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.4.1"
 }
