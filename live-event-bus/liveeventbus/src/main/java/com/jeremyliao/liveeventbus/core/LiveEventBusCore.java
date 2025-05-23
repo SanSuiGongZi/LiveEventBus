@@ -1,5 +1,6 @@
 package com.jeremyliao.liveeventbus.core;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.arch.lifecycle.ExternalLiveData;
 import android.arch.lifecycle.Lifecycle;
@@ -116,6 +117,7 @@ public final class LiveEventBusCore {
         this.logger.setEnable(enable);
     }
 
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     void registerReceiver() {
         if (isRegisterReceiver) {
             return;
