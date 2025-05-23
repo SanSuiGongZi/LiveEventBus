@@ -126,7 +126,7 @@ public final class LiveEventBusCore {
         if (application != null) {
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction(IpcConst.ACTION);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
                 application.registerReceiver(receiver,intentFilter, Context.RECEIVER_EXPORTED);
             }else {
                 application.registerReceiver(receiver, intentFilter);
